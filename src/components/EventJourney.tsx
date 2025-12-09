@@ -1,12 +1,14 @@
 import Image from "next/image";
 
 const events = [
-    { time: "9:00 AM", title: "Registration & Welcome Coffee", description: "Network with fellow attendees and grab some refreshments" },
-    { time: "10:00 AM", title: "Keynote Speech", description: "Opening remarks and vision for KCD Delhi 2026" },
-    { time: "11:30 AM", title: "Technical Sessions", description: "Deep dive into Kubernetes and Cloud Native technologies" },
-    { time: "1:00 PM", title: "Lunch Break", description: "Enjoy a delicious spread and networking" },
-    { time: "2:00 PM", title: "Workshops", description: "Hands-on learning experiences" },
-    { time: "4:00 PM", title: "Closing Remarks", description: "Wrap up and community awards" },
+    { title: "Registrations", description: "Get Started for the day, grab your badge and enjoy some coffee and let people know you're here!" },
+    { title: "Keynote", description: "Keynote & Opening remarks and vision for KCD Delhi 2026" },
+    { title: "Breakfast/Coffee", description: "Enjoy morning refreshments and networking" },
+    { title: "Parallel Technical Sessions/Workshops", description: "Deep dive into Kubernetes and Cloud Native technologies" },
+    { title: "Lunch", description: "Enjoy a delicious food, meet with amazing people" },
+    { title: "Parallel Technical Sessions/Workshops", description: "Hands-on learning experiences and advanced sessions" },
+    { title: "High Tea and Snacks", description: "Afternoon refreshments and community networking" },
+    { title: "Closing Remarks", description: "Wrap up and community awards" },
 ];
 
 export default function EventJourney() {
@@ -32,7 +34,7 @@ export default function EventJourney() {
 
             {/* Title */}
             <h2 className="text-4xl md:text-6xl font-bold text-black text-center mb-16 md:mb-32 z-10">
-                Event Journey
+                Event Timeline
             </h2>
 
             {/* MOBILE: Vertical Timeline */}
@@ -49,12 +51,9 @@ export default function EventJourney() {
 
                         {/* Card */}
                         <div className="flex-1 bg-[#fae8d9] border border-[#e8c9b3] rounded-2xl p-5 text-left shadow-md">
-                            <h3 className="font-bold text-gray-900 leading-tight text-lg mb-1">
+                            <h3 className="font-bold text-gray-900 leading-tight text-lg mb-2">
                                 {event.title}
                             </h3>
-                            <span className="block text-[#d97757] font-bold text-sm mb-2">
-                                {event.time}
-                            </span>
                             <p className="text-gray-600 text-sm leading-relaxed">
                                 {event.description}
                             </p>
@@ -104,12 +103,9 @@ export default function EventJourney() {
                                     }}
                                 >
                                     <div className="bg-[#fae8d9] border border-[#e8c9b3] rounded-2xl p-5 text-center shadow-sm hover:scale-105 transition-transform duration-300">
-                                        <h3 className="font-bold text-gray-900 leading-tight text-base mb-1">
+                                        <h3 className="font-bold text-gray-900 leading-tight text-base mb-2">
                                             {event.title}
                                         </h3>
-                                        <span className="block text-[#d97757] font-bold text-sm mb-1">
-                                            {event.time}
-                                        </span>
                                         <p className="text-gray-600 text-xs leading-relaxed">
                                             {event.description}
                                         </p>

@@ -3,7 +3,9 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
-const TARGET_DATE = new Date("2026-01-01T00:00:00"); // Placeholder date
+// Use an ISO 8601 string without extra spaces so Date parsing is reliable.
+// Set event year to 2026 (site header shows 2026) and time to start of day UTC.
+const TARGET_DATE = new Date("2026-02-21T00:00:00Z"); // Event date (UTC)
 
 export default function Hero() {
     const [timeLeft, setTimeLeft] = useState({
@@ -15,7 +17,10 @@ export default function Hero() {
 
     useEffect(() => {
         const calculateTimeLeft = () => {
-            const difference = +TARGET_DATE - +new Date();
+            // Event countdown
+            const now = new Date();
+            const difference = +TARGET_DATE - +now;
+
             if (difference > 0) {
                 setTimeLeft({
                     days: Math.floor(difference / (1000 * 60 * 60 * 24)).toString().padStart(2, '0'),
@@ -23,6 +28,9 @@ export default function Hero() {
                     minutes: Math.floor((difference / 1000 / 60) % 60).toString().padStart(2, '0'),
                     seconds: Math.floor((difference / 1000) % 60).toString().padStart(2, '0'),
                 });
+            } else {
+                // Ensure we show zeros when the target date has passed
+                setTimeLeft({ days: '00', hours: '00', minutes: '00', seconds: '00' });
             }
         };
 
@@ -71,11 +79,16 @@ export default function Hero() {
 
                     <div className="flex flex-col sm:flex-row gap-4 mt-8 w-full sm:w-auto">
                         <button className="bg-[#0f172a] text-white px-8 py-4 rounded-lg font-medium text-lg hover:bg-[#0f172a]/90 transition-colors shadow-lg w-full sm:w-auto">
-                            Coming soon
+                            Registrations Coming Soon
                         </button>
-                        <button className="bg-transparent border-2 border-white/80 text-white px-8 py-4 rounded-lg font-medium text-lg hover:bg-white/10 transition-colors shadow-lg w-full sm:w-auto backdrop-blur-sm">
+                        <a 
+                            href="https://sessionize.com/kcd-new-delhi/" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="bg-transparent border-2 border-white/80 text-white px-8 py-4 rounded-lg font-medium text-lg hover:bg-white/10 transition-colors shadow-lg w-full sm:w-auto backdrop-blur-sm text-center inline-block"
+                        >
                             Call for papers
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

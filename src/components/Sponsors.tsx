@@ -14,12 +14,13 @@ export default function Sponsors() {
                     </h2>
 
                     <p className="text-xl md:text-2xl text-[#1e293b] max-w-3xl mx-auto mb-12 leading-relaxed font-medium">
-                        Interested in sponsoring KCD New Delhi? Join us in supporting the Kubernetes community and get your brand in front of hundreds of cloud native enthusiasts.
+                        Join us as a sponsor at Kubernetes Community Days New Delhi and play a key role in empowering India’s cloud-native community. Sponsoring KCD New Delhi offers measurable business value—strengthen brand visibility, generate high-quality leads, position your solutions in front of active adopters, and demonstrate your commitment to the open-source ecosystem.
                     </p>
 
                     <button className="bg-[#e2e8f0] hover:bg-white text-[#0f172a] font-bold py-4 px-10 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl text-lg md:text-xl transform hover:-translate-y-1">
-                        View Sponsorship packages
+                        Interested in Sponsoring?
                     </button>
+                   
 
                 </div>
             </div>

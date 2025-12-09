@@ -64,7 +64,7 @@ export default function Venue() {
                             </div>
                             <div className="text-center">
                                 <p className="text-[#0F0B33] text-lg">Date:</p>
-                                <p className="text-[#0F0B33] text-xl font-medium">February 26 2026</p>
+                                <p className="text-[#0F0B33] text-xl font-medium">February 21, 2026</p>
                             </div>
                         </div>
                     </div>
@@ -90,7 +90,7 @@ export default function Venue() {
                             <div className="bg-white/10 border border-white/10 rounded-2xl p-6 hover:bg-white/15 transition-colors">
                                 <h4 className="font-bold text-black text-lg mb-2">What&apos;s Included?</h4>
                                 <p className="text-gray-700 text-sm leading-relaxed">
-                                    Network with fellow attendees and grab some refreFull day access, breakfast, lunch, evening snacks, conference materials, exclusive swag, and networking opportunities with 500+ attendees.
+                                    Gain full-day access to engaging technical talks, hands-on workshops, and open-source discussions—along with breakfast, lunch, evening refreshments, conference materials, exclusive swag, and dedicated networking opportunities with 500+ industry professionals.
                                 </p>
                             </div>
 
@@ -98,7 +98,7 @@ export default function Venue() {
                             <div className="bg-white/10 border border-white/10 rounded-2xl p-6 hover:bg-white/15 transition-colors">
                                 <h4 className="font-bold text-black text-lg mb-2">Who Should Attend?</h4>
                                 <p className="text-gray-700 text-sm leading-relaxed">
-                                    DevOps engineers, cloud architects, platform engineers, SREs, developers, and technology leaders interested in Kubernetes and cloud-native technologies.
+                                    AI Developers, DevOps engineers, Cloud architects, Platform Engineers, SREs, Software Developers, and Technology Leaders interested in Kubernetes and Cloud-native technologies.
                                 </p>
                             </div>
                         </div>

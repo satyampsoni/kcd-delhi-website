@@ -29,24 +29,36 @@ export default function About() {
                     <div className="bg-white/20 backdrop-blur-md border border-white/30 rounded-3xl p-8 md:p-16 shadow-xl">
 
                         <p className="text-xl md:text-2xl text-center text-gray-800 font-medium leading-relaxed max-w-4xl mx-auto mb-16">
-                            Kubernetes Community Days (KCD) are community-organized events that bring
-                            together adopters and technologists from open source and cloud native communities.
+                            Presenting you the first ever KCD in the heart of India - KCD Delhi, that brings together adopters and technologists from the open source and cloud native ecosystem for a full day of learning, collaboration, and meaningful networking. With 700+ attendees expected, it stands as one of India’s most vibrant cloud native gatherings.
+
                         </p>
 
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-                            {/* Feature 1: UsersRound */}
-                            <div className="bg-white/30 rounded-2xl p-10 flex items-center justify-center md:aspect-square border border-gray-400/20 shadow-sm hover:scale-105 transition-transform">
-                                <UsersRound className="w-24 h-24 text-blue-500 fill-blue-200/50" strokeWidth={1.5} />
+                            {/* Feature 1: Attendees */}
+                            <div className="bg-white/30 rounded-2xl p-10 flex flex-col items-center justify-center md:aspect-square border border-gray-400/20 shadow-sm hover:scale-105 transition-transform">
+                                <UsersRound className="w-24 h-24 text-blue-500 fill-blue-200/50 mb-4" strokeWidth={1.5} />
+                                <div className="text-center">
+                                    <h3 className="text-3xl font-bold text-gray-800 mb-1">700+</h3>
+                                    <p className="text-gray-600 font-medium">Attendees</p>
+                                </div>
                             </div>
 
-                            {/* Feature 2: Shield */}
-                            <div className="bg-white/30 rounded-2xl p-10 flex items-center justify-center md:aspect-square border border-gray-400/20 shadow-sm hover:scale-105 transition-transform">
-                                <Shield className="w-24 h-24 text-green-500 fill-green-200/50" strokeWidth={1.5} />
+                            {/* Feature 2: Security/Trust */}
+                            <div className="bg-white/30 rounded-2xl p-10 flex flex-col items-center justify-center md:aspect-square border border-gray-400/20 shadow-sm hover:scale-105 transition-transform">
+                                <Shield className="w-24 h-24 text-green-500 fill-green-200/50 mb-4" strokeWidth={1.5} />
+                                <div className="text-center">
+                                    <h3 className="text-3xl font-bold text-gray-800 mb-1">30+</h3>
+                                    <p className="text-gray-600 font-medium">Speakers</p>
+                                </div>
                             </div>
 
-                            {/* Feature 3: Lightbulb */}
-                            <div className="bg-white/30 rounded-2xl p-10 flex items-center justify-center md:aspect-square border border-gray-400/20 shadow-sm hover:scale-105 transition-transform">
-                                <Lightbulb className="w-24 h-24 text-sky-400 fill-yellow-200/80" strokeWidth={1.5} />
+                            {/* Feature 3: Innovation */}
+                            <div className="bg-white/30 rounded-2xl p-10 flex flex-col items-center justify-center md:aspect-square border border-gray-400/20 shadow-sm hover:scale-105 transition-transform">
+                                <Lightbulb className="w-24 h-24 text-sky-400 fill-yellow-200/80 mb-4" strokeWidth={1.5} />
+                                <div className="text-center">
+                                    <h3 className="text-3xl font-bold text-gray-800 mb-1">1</h3>
+                                    <p className="text-gray-600 font-medium">Day Event</p>
+                                </div>
                             </div>
                         </div>
                     </div>

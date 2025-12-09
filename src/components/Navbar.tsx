@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
@@ -16,9 +16,43 @@ const navLinks = [
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const [isVisible, setIsVisible] = useState(true);
+    const [lastScrollY, setLastScrollY] = useState(0);
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+            
+            // Check if user has scrolled past the hero section (100px threshold)
+            setIsScrolled(currentScrollY > 100);
+            
+            // Show/hide navbar based on scroll direction
+            if (currentScrollY < lastScrollY || currentScrollY < 100) {
+                // Scrolling up or at top - show navbar
+                setIsVisible(true);
+            } else {
+                // Scrolling down - hide navbar
+                setIsVisible(false);
+                setIsOpen(false); // Close mobile menu when hiding
+            }
+            
+            setLastScrollY(currentScrollY);
+        };
+
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [lastScrollY]);
 
     return (
-        <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 md:px-12 bg-transparent backdrop-blur-sm md:backdrop-blur-none transition-all duration-300">
+        <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out ${
+            isVisible ? 'translate-y-0' : '-translate-y-full'
+        } ${
+            isScrolled 
+                ? 'bg-white/95 backdrop-blur-lg shadow-lg border-b border-gray-200/50' 
+                : 'bg-transparent'
+        }`}>
+            <div className="flex items-center justify-between px-6 py-4 md:px-12">
             <Link href="/" className="relative h-12 w-12 md:h-20 md:w-20">
                 <Image
                     src="/KCD DELHI Logo.png"
@@ -36,7 +70,11 @@ export default function Navbar() {
                     <Link
                         key={link.name}
                         href={link.href}
-                        className="text-[#004e66] hover:text-[#004e66]/80 font-bold text-2xl transition-colors"
+                        className={`font-bold text-2xl transition-all duration-300 hover:scale-105 ${
+                            isScrolled 
+                                ? 'text-[#004e66] hover:text-[#004e66]/80' 
+                                : 'text-white hover:text-white/80 drop-shadow-lg'
+                        }`}
                     >
                         {link.name}
                     </Link>
@@ -45,11 +83,14 @@ export default function Navbar() {
 
             {/* Mobile Menu Button */}
             <button
-                className="md:hidden text-[#004e66] p-2"
+                className={`md:hidden p-2 transition-colors duration-300 ${
+                    isScrolled ? 'text-[#004e66]' : 'text-white'
+                }`}
                 onClick={() => setIsOpen(!isOpen)}
             >
                 {isOpen ? <X size={32} /> : <Menu size={32} />}
             </button>
+            </div>
 
             {/* Mobile Dropdown */}
             {isOpen && (

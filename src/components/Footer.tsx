@@ -12,7 +12,7 @@ export default function Footer() {
                     <div className="md:col-span-6 flex flex-col gap-4">
                         <div>
                             <h3 className="text-2xl font-bold">CNCF</h3>
-                            <p className="text-sm text-gray-300">Cloud Native Computing</p>
+                            <p className="text-sm text-gray-300">Cloud Native Computing Foundation</p>
                         </div>
                         <p className="text-gray-200 text-lg leading-relaxed max-w-md">
                             KCD New Delhi is an official Cloud Native Computing Foundation event.
@@ -23,8 +23,10 @@ export default function Footer() {
                     <div className="md:col-span-3 flex flex-col gap-4">
                         <h4 className="text-xl font-bold mb-2">Connect</h4>
                         <div className="flex flex-col gap-2">
-                            <Link href="#" className="text-gray-200 hover:text-white transition-colors">Twitter</Link>
-                            <Link href="#" className="text-gray-200 hover:text-white transition-colors">Email</Link>
+                            <Link href="https://x.com/kcddelhi" className="text-gray-200 hover:text-white transition-colors">Twitter/X</Link>
+                            <Link href="https://www.instagram.com/kcddelhi/" className="text-gray-200 hover:text-white transition-colors">Instagram</Link>
+                            <Link href="mailto:contact@kcddelhi.com" className="text-gray-200 hover:text-white transition-colors">Email</Link>
+
                         </div>
                     </div>
 
@@ -32,9 +34,10 @@ export default function Footer() {
                     <div className="md:col-span-3 flex flex-col gap-4">
                         <h4 className="text-xl font-bold mb-2">Info</h4>
                         <div className="flex flex-col gap-2">
-                            <Link href="#" className="text-gray-200 hover:text-white transition-colors">About</Link>
-                            <Link href="#" className="text-gray-200 hover:text-white transition-colors">Call for Papers</Link>
-                            <Link href="#" className="text-gray-200 hover:text-white transition-colors">Code of Conduct</Link>
+                            <Link href="https://github.com/cncf/foundation/blob/main/code-of-conduct.md" className="text-gray-200 hover:text-white transition-colors">Code of Conduct</Link>
+                            <Link href="https://github.com/cncf/kubernetes-community-days/issues/661" className="text-gray-200 hover:text-white transition-colors">Github</Link>
+                            
+                            
                         </div>
                     </div>
 
@@ -45,7 +48,7 @@ export default function Footer() {
 
                 {/* Copyright */}
                 <div className="text-center text-gray-400 text-sm">
-                    &copy; 2025 KCD New Delhi. Licensed under MIT License.
+                    &copy; 2026 KCD New Delhi. Licensed under MIT License.
                 </div>
 
             </div>

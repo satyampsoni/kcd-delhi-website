@@ -37,7 +37,7 @@ export default function Speakers() {
 
                         {/* Subtitle */}
                         <p className="text-xl md:text-4xl text-gray-800 text-center font-normal leading-relaxed max-w-4xl">
-                            We&apos;re looking for passionate speakers to share their knowledge and experience with the Kubernetes community in New Delhi.
+                            We&apos;re looking for passionate speakers to share their knowledge and experience with the Kubernetes Community in New Delhi.
                         </p>
 
                         {/* Call for Papers Inner Box */}
@@ -56,7 +56,7 @@ export default function Speakers() {
 
                         {/* CTA Button */}
                         <a
-                            href="#"
+                            href="https://sessionize.com/kcd-new-delhi/"
                             className="bg-[#0f172a] text-white px-10 py-4 rounded-lg font-semibold text-lg hover:bg-[#1e293b] transition-colors shadow-lg mt-4"
                         >
                             Submit your talk
