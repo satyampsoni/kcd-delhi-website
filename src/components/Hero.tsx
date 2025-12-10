@@ -41,7 +41,7 @@ export default function Hero() {
     }, []);
 
     return (
-        <section className="relative min-h-screen w-full flex flex-col justify-center overflow-hidden">
+        <section className="relative min-h-screen w-full flex flex-col justify-center overflow-hidden pb-24 md:pb-32">
             {/* Background Layer 1: Image */}
             <div className="absolute inset-0 -z-20">
                 <Image
