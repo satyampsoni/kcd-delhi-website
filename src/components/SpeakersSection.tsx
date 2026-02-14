@@ -81,13 +81,6 @@ const speakers = [
     image: "/speakers/amandeep-singh.jpg",
   },
   {
-    name: "Anisha Singla",
-    designation: "Founder",
-    company: "Teeny Tech Trek",
-    talkTitle: "KMCP and the Future of Agent-Native Kubernetes",
-    image: "/speakers/Anisha-Singla.png",
-  },
-  {
     name: "Arnab Chatterjee",
     designation: "Cloud Native Expert",
     company: "",
@@ -243,6 +236,13 @@ const speakers = [
     talkTitle:
       "Taming the Multi-Cluster Sprawl: Add-on Automation with Project Sveltos",
     image: "/speakers/suman-chakraborty.jpg",
+  },
+  {
+    name: "Surabhi",
+    designation: "Data Engineer",
+    company: "American Express",
+    talkTitle: "KMCP and the Future of Agent-Native Kubernetes",
+    image: "/speakers/saurabhi.JPG",
   },
   {
     name: "Yash Verma",
