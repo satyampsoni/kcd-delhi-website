@@ -230,7 +230,7 @@ const speakers = [
   },
   {
     name: "Someshwaran M",
-    designation: "Speaker",
+    designation: "Dev Advocate",
     company: "Elastic",
     talkTitle:
       "Building Elastic Cloud Serverless on K8s: Lessons from Operating at Scale",
