@@ -61,9 +61,9 @@ const tracks = [
       {
         time: "14:15 – 14:45",
         title: "Surviving Zero-Trust-Reliability with Observability and eBPF",
-        speaker: "Yash Verma",
+        speaker: "Yash Verma - ",
       },
-      { time: "14:45 – 15:15", title: "Building Elastic Cloud Serverless on K8s: Lessons from Operating at Scale", speaker: "Someshwaran M" },
+      { time: "14:45 – 15:15", title: "Building Elastic Cloud Serverless on K8s: Lessons from Operating at Scale", speaker: "Someshwaran M - Developer Advocate, Elastic" },
       {
         time: "15:15 – 15:45",
         title: "Why AIOps Failed, And Why Agents Might Finally Work",
@@ -76,7 +76,7 @@ const tracks = [
       {
         time: "16:45 – 17:15",
         title: "KServe & KAgent: Simplifying AI Model Deployment at Scale",
-        speaker: "Rishi Mondal & Onkar Shelke",
+        speaker: "Rishi Mondal & Naman Jain",
       },
 
       {
