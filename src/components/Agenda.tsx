@@ -16,14 +16,14 @@ const tracks = [
       {
         time: "09:30 – 09:50",
         title: "Opening Remarks",
-        speaker: "Saiyam Pathak",
+        speaker: "Saiyam Pathak - Head of Developer Relations, vCluster",
       },
       { time: "09:50 – 10:00", title: "AI-driven Decision Support Systems in Defence", speaker: "Ms Sanchita Malik, Sc-G, Defence Research & Development Organisation" },
       {
         time: "10:10 – 10:30",
         title:
           " AI on Kubernetes: A Community Roundtable on What’s Working, What’s Not",
-        speaker: "Atulpriya Sharma, Ram Iyengar, Saloni Narang,  Amanda Brock",
+        speaker: "Atulpriya Sharma - Senior Developer Advocate, Infracloud, Ram Iyengar - Chief Evangelist, Cloud Foundry Foundation, Saloni Narang - Co-Founder, Kubesimplify, Amanda Brock - CEO, OpenUK",
       },
 
       { time: "10:30 – 11:15", title: "Tea Break", speaker: "" },
@@ -65,14 +65,19 @@ const tracks = [
       },
       { time: "14:45 – 15:15", title: "Building Elastic Cloud Serverless on K8s: Lessons from Operating at Scale", speaker: "Someshwaran M - Developer Advocate, Elastic" },
       {
-        time: "15:15 – 15:45",
-        title: "Why AIOps Failed, And Why Agents Might Finally Work",
-        speaker: "TBA",
+        time: "15:15 – 15:30",
+        title: " Why First-Generation AIOps Stalled, And What Agentic AIOps Changes",
+        speaker: "Rakesh Rajendran - Co-Founder & CEO, Nudgebee",
+      },
+      {
+        time: "15:30 – 15:45",
+        title: " Shift Left Without Slowing Down: Pre-Hardened Containers for Developer Velocity",
+        speaker: "Sanket Modi - Sr. Manager - Community, Cleanstart",
       },
 
       { time: "15:45 – 16:15", title: "Tea Break", speaker: "" },
 
-      { time: "16:15 – 16:45", title: "TBA", speaker: "TBA" },
+      { time: "16:15 – 16:45", title: "Running Multiple Isolated AI Workloads on AMD MI300X GPUs", speaker: "Mridul Swarup - Manager, Developer Relations, Vultr" },
       {
         time: "16:45 – 17:15",
         title: "KServe & KAgent: Simplifying AI Model Deployment at Scale",
@@ -82,6 +87,11 @@ const tracks = [
       {
         time: "17:15 – 17:30",
         title: "Closing Remarks & Group Photo",
+        speaker: "",
+      },
+      {
+        time: "17:30 – 18:30",
+        title: "Solutions Showcase & Networking Hour",
         speaker: "",
       },
     ],
@@ -144,7 +154,7 @@ const tracks = [
         title:
           "KMCP and the Future of Agent-Native Kubernetes: Control Planes ",
         speaker:
-          "Anisha Singla - Founder, Teeny Tech Trek & Aman Mundra -  Founder and CEO, Welzin",
+          " Aman Mundra -  Founder and CEO, Welzin & Saurabhi - Data Engineer, American Express",
       },
 
       { time: "15:45 – 16:15", title: "Tea Break", speaker: "" },
@@ -159,6 +169,11 @@ const tracks = [
         time: "16:45 – 17:00",
         title: "AI-Assisted Kubernetes Policy Management with Kyverno",
         speaker: "Akshay kumar -  Open Source Evangelist, Obmondo",
+      },
+      {
+        time: "17:30 – 18:30",
+        title: "Solutions Showcase & Networking Hour",
+        speaker: "—",
       },
     ],
   },
@@ -180,20 +195,25 @@ const tracks = [
       {
         time: "14:15 – 15:30",
         title: "Women Gathering – Community Meetup",
-        speaker: "",
+        speaker: "Saloni Narang - Co-Founder, Kubesimplify ",
       },
       {
         time: "15:30 – 15:45",
-        title: "TBA",
-        speaker: "TBA",
+        title: "Sponsor and Speakers Lounge",
+        speaker: "—",
       },
 
       { time: "15:45 – 16:15", title: "Tea Break", speaker: "" },
 
       {
         time: "16:15 – 17:15",
-        title: "TBA",
-        speaker: "TBA",
+        title: "Sponsors and Speakers Lounge",
+        speaker: "—",
+      },
+      {
+        time: "17:30 – 18:30",
+        title: "Solutions Showcase & Networking Hour",
+        speaker: "—",
       },
     ],
   },
@@ -333,6 +353,16 @@ export default function Agenda() {
               <ChevronRight className="w-5 h-5 text-black" />
             </button>
           </div>
+        </div>
+
+        {/* Solutions Showcase Note */}
+        <div className="mt-10 bg-gradient-to-r from-[#ea580c] via-[#f97316] to-[#ea580c] rounded-2xl p-6 text-center shadow-2xl border-2 border-white/30">
+          <p className="text-[#fef3e2] font-bold text-lg md:text-xl drop-shadow-lg">
+            <span className="text-white font-extrabold">Solutions Showcase</span> will be open during{" "}
+            <span className="text-white font-extrabold">Tea Breaks</span>,{" "}
+            <span className="text-white font-extrabold">Lunch Break</span> &{" "}
+            <span className="text-white font-extrabold">Networking Hour (17:30 – 18:30)</span>
+          </p>
         </div>
       </div>
     </section>
