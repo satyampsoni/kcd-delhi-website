@@ -80,10 +80,10 @@ export default function Sponsors() {
                 />
               </div>
 
-              <div className="flex items-center justify-center bg-[#1B2D4A] rounded-xl p-8 shadow-lg max-w-md w-full h-32">
+              <div className="flex items-center justify-center bg-white rounded-xl p-8 shadow-lg max-w-md w-full h-32">
                 <ImageBtn
                   href="https://www.cleanstart.com/"
-                  src="/cleanstart_logo.jpeg"
+                  src="/cleanstart.png"
                   alt="CleanStart Logo"
                   width={220}
                   height={60}
