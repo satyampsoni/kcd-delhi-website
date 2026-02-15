@@ -61,7 +61,7 @@ const tracks = [
       {
         time: "14:15 – 14:45",
         title: "Surviving Zero-Trust-Reliability with Observability and eBPF",
-        speaker: "Yash Verma - ",
+        speaker: "Yash Verma - Community Advocate, OpenTelemetry",
       },
       { time: "14:45 – 15:15", title: "Building Elastic Cloud Serverless on K8s: Lessons from Operating at Scale", speaker: "Someshwaran M - Developer Advocate, Elastic" },
       {
@@ -168,7 +168,7 @@ const tracks = [
       {
         time: "16:45 – 17:00",
         title: "AI-Assisted Kubernetes Policy Management with Kyverno",
-        speaker: "Akshay kumar -  Open Source Evangelist, Obmondo",
+        speaker: "Akshay Kumar -  Open Source Evangelist, Obmondo",
       },
       {
         time: "17:30 – 18:30",
