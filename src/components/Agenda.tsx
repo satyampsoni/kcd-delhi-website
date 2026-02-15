@@ -251,7 +251,7 @@ function TrackTable({
                   Session
                 </th>
                 <th className="px-6 py-4 text-left text-sm font-bold text-black">
-                  Speaker
+                  {track.name === "Galaxy" ? "Host" : "Speaker"}
                 </th>
               </tr>
             </thead>
