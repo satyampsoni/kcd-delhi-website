@@ -99,7 +99,7 @@ export default function RegistrationModal({
         {/* Content */}
         <div className="overflow-y-auto h-[calc(100vh-64px)] md:max-h-[calc(90vh-64px)]">
           <iframe
-            src="https://konfhub.com/widget/kcd-delhi-2026?desc=true&secondaryBg=fffff8&ticketBg=fffff8&borderCl=fffff8&bg=ffffff&fontColor=1e1f24&ticketCl=1e1f24&btnColor=6e3d00&fontFamily=Figtree&borderRadius=10&widget_type=standard&tickets=70668&ticketId=70668%7C1"
+            src="https://konfhub.com/widget/kcd-delhi-2026?desc=true&secondaryBg=F7F7F7&ticketBg=F7F7F7&borderCl=F7F7F7&bg=FFFFFF&fontColor=1e1f24&ticketCl=1e1f24&btnColor=002E6E&fontFamily=Hind&borderRadius=10&widget_type=standard&tickets=70669&ticketId=70669%7C1"
             id="konfhub-widget"
             title="Register for KCD Delhi 2026"
             width="100%"
