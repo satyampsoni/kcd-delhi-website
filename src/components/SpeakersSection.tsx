@@ -38,7 +38,7 @@ const keynoteSpeakers = [
     designation: "Co-Founder",
     company: "Kubesimplify",
     talkTitle: "Panel Discussion",
-    image: "/speakers/saloni-narang.jpg",
+    image: "/speakers/saloni-narang.jpeg",
   },
   {
     name: "Sanchita Malik",

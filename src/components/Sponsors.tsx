@@ -288,6 +288,16 @@ export default function Sponsors() {
                 className="max-w-full max-h-full object-contain rounded-md"
               />
             </div>
+            <div className="flex items-center justify-center bg-[#232e3c] rounded-xl p-8 shadow-lg aspect-square w-32 md:w-40">
+              <ImageBtn
+                href="https://community.cncf.io/women-in-cloud-native/"
+                src="/cloud-native-partners/women-in-cn.jpeg"
+                alt="Women in Cloud Native Partner Logo"
+                width={220}
+                height={60}
+                className="max-w-full max-h-full object-contain rounded-md"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -391,7 +401,7 @@ export default function Sponsors() {
           >
             <div className="h-20 w-full max-w-[200px] flex items-center justify-center">
               <Image
-                src="/elastic.jpeg"
+                src="/elastic.png"
                 alt="Elastic User Group New Delhi Logo"
                 width={200}
                 height={80}
