@@ -77,7 +77,7 @@ const tracks = [
 
       { time: "15:45 – 16:15", title: "Tea Break", speaker: "" },
 
-      { time: "16:15 – 16:45", title: "Running Multiple Isolated AI Workloads on AMD MI300X GPUs", speaker: "Mridul Swarup - Manager, Developer Relations, Vultr" },
+      { time: "16:15 – 16:45", title: "Running Multiple Isolated AI Workloads on AMD MI300X GPUs", speaker: "Mirdul Sarup - Manager, Developer Relations, Vultr" },
       {
         time: "16:45 – 17:15",
         title: "KServe & KAgent: Simplifying AI Model Deployment at Scale",
@@ -179,7 +179,7 @@ const tracks = [
   },
 
   {
-    name: "Galaxy",
+    name: "Pluto",
     color: "from-[#EAB308] to-[#CA8A04]",
     bgColor: "bg-[#EAB308]",
     headerBg: "bg-[#EAB308]",
@@ -251,7 +251,7 @@ function TrackTable({
                   Session
                 </th>
                 <th className="px-6 py-4 text-left text-sm font-bold text-black">
-                  {track.name === "Galaxy" ? "Host" : "Speaker"}
+                  {track.name === "Pluto" ? "Host" : "Speaker"}
                 </th>
               </tr>
             </thead>

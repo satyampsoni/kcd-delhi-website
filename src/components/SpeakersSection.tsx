@@ -119,7 +119,7 @@ const speakers = [
     image: "/speakers/mridul-gain.jpg",
   },
   {
-    name: "Mridul Swarup",
+    name: "Mirdul Swarup",
     designation: "Manager, Developer Relations",
     company: "Vultr",
     talkTitle: "Running Multiple Isolated AI Workloads on AMD MI300X GPUs",

@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/light",
+      "destination": "https://light-taupe.vercel.app/"
+    },
+    {
+      "source": "/light/:path*",
+      "destination": "https://light-taupe.vercel.app/:path*"
+    }
+  ]
+}
