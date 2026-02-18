@@ -45,7 +45,7 @@ const keynoteSpeakers = [
     designation: "Scientist",
     company: "DRDO",
     talkTitle: "Keynote Talk: AI-Driven Decision Support System in Defence",
-    image: "/speakers/drdo 2.png",
+    image: "/speakers/sanchita.jpg",
   },
 ];
 

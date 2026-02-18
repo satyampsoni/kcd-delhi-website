@@ -1,3 +1,4 @@
+import Image from "next/image";
 import ImageBtn from "../components/ImageBtn";
 
 export default function Sponsors() {
@@ -292,55 +293,115 @@ export default function Sponsors() {
       </div>
 
       {/* Community Partners */}
-      <div className="container mx-auto px-4 md:px-8 relative z-10 w-full max-w-5xl">
-        <div className="bg-white/25 backdrop-blur-md border border-white/30 rounded-xl p-6 md:p-20 text-center shadow-2xl">
-          <h3 className="text-4xl md:text-6xl font-extrabold text-[#0f172a] mb-12 tracking-tight">
-            Community Partners
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
-            <div className="flex items-center justify-center bg-white/95 rounded-xl p-8 shadow-lg w-full max-w-md h-32">
-              <ImageBtn
-                href="https://kubesimplify.com/"
+      <div className="container mx-auto px-4 md:px-8 relative z-10 w-full max-w-[1200px]">
+        <h3 className="text-[32px] md:text-[48px] font-bold text-[#0f172a] mb-[60px] text-center">
+          Community Partners
+        </h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8">
+          {/* Kubesimplify */}
+          <a
+            href="https://kubesimplify.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col items-center bg-white rounded-2xl p-8 shadow-[0_10px_30px_rgba(0,0,0,0.06)] hover:shadow-[0_15px_40px_rgba(0,0,0,0.1)] hover:-translate-y-1.5 transition-all duration-300 ease-in-out"
+          >
+            <div className="h-20 w-full max-w-[200px] flex items-center justify-center">
+              <Image
                 src="/kubesimplify-logo.svg"
                 alt="KubeSimplify Logo"
-                width={220}
-                height={50}
-                className="max-w-full max-h-full object-contain"
+                width={200}
+                height={80}
+                className="object-contain max-h-full"
               />
             </div>
-            <div className="flex items-center justify-center bg-white/95 rounded-xl p-8 shadow-lg w-full max-w-md h-32">
-              <ImageBtn
-                href="https://www.wemakedevs.org/"
+            <p className="mt-5 text-xl font-semibold text-[#1f2937] text-center">
+              Kubesimplify
+            </p>
+          </a>
+
+          {/* WeMakeDevs */}
+          <a
+            href="https://www.wemakedevs.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col items-center bg-white rounded-2xl p-8 shadow-[0_10px_30px_rgba(0,0,0,0.06)] hover:shadow-[0_15px_40px_rgba(0,0,0,0.1)] hover:-translate-y-1.5 transition-all duration-300 ease-in-out"
+          >
+            <div className="h-20 w-full max-w-[200px] flex items-center justify-center">
+              <Image
                 src="/we-make-devs-logo.jpeg"
                 alt="WeMakeDevs Logo"
-                width={260}
-                height={60}
-                className="max-w-full max-h-full object-contain"
-              />
-            </div>
-            {/* Grafana and Friends Delhi as Community Partner (no border) */}
-            <div className="flex items-center justify-center bg-transparent shadow-none w-full max-w-md h-32">
-              <ImageBtn
-                href="https://www.meetup.com/grafana-friends-delhi/"
-                src="/grafana-and-friends-delhi.avif"
-                alt="Grafana and Friends Delhi Community Partner"
-                width={220}
+                width={200}
                 height={80}
-                className="max-w-full max-h-full object-contain"
+                className="object-contain max-h-full"
               />
             </div>
-            {/* GrowIn Community Partner (no rectangular border) */}
-            <div className="flex items-center justify-center bg-transparent shadow-none w-full max-w-md h-32">
-              <ImageBtn
-                href="https://www.linkedin.com/company/growincommunity/?viewAsMember=true"
+            <p className="mt-5 text-xl font-semibold text-[#1f2937] text-center">
+              WeMakeDevs
+            </p>
+          </a>
+
+          {/* Grafana and Friends Delhi */}
+          <a
+            href="https://www.meetup.com/grafana-friends-delhi/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col items-center bg-white rounded-2xl p-8 shadow-[0_10px_30px_rgba(0,0,0,0.06)] hover:shadow-[0_15px_40px_rgba(0,0,0,0.1)] hover:-translate-y-1.5 transition-all duration-300 ease-in-out"
+          >
+            <div className="h-20 w-full max-w-[200px] flex items-center justify-center">
+              <Image
+                src="/grafana-and-friends-delhi.avif"
+                alt="Grafana and Friends Delhi Logo"
+                width={200}
+                height={80}
+                className="object-contain max-h-full"
+              />
+            </div>
+            <p className="mt-5 text-xl font-semibold text-[#1f2937] text-center">
+              Grafana and Friends Delhi
+            </p>
+          </a>
+
+          {/* GrowIn Community */}
+          <a
+            href="https://www.linkedin.com/company/growincommunity/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col items-center bg-white rounded-2xl p-8 shadow-[0_10px_30px_rgba(0,0,0,0.06)] hover:shadow-[0_15px_40px_rgba(0,0,0,0.1)] hover:-translate-y-1.5 transition-all duration-300 ease-in-out"
+          >
+            <div className="h-20 w-full max-w-[200px] flex items-center justify-center">
+              <Image
                 src="/growinn-community.png"
-                alt="GrowIn Community Partner"
-                width={120}
-                height={120}
-                className="max-w-full max-h-full object-contain"
+                alt="GrowIn Community Logo"
+                width={200}
+                height={80}
+                className="object-contain max-h-full"
               />
             </div>
-          </div>
+            <p className="mt-5 text-xl font-semibold text-[#1f2937] text-center">
+              GrowIn Community
+            </p>
+          </a>
+
+          {/* Elastic User Group New Delhi */}
+          <a
+            href="https://www.elastic.co/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col items-center bg-white rounded-2xl p-8 shadow-[0_10px_30px_rgba(0,0,0,0.06)] hover:shadow-[0_15px_40px_rgba(0,0,0,0.1)] hover:-translate-y-1.5 transition-all duration-300 ease-in-out md:col-span-2 md:max-w-[calc(50%-16px)] md:mx-auto"
+          >
+            <div className="h-20 w-full max-w-[200px] flex items-center justify-center">
+              <Image
+                src="/elastic.jpeg"
+                alt="Elastic User Group New Delhi Logo"
+                width={200}
+                height={80}
+                className="object-contain max-h-full"
+              />
+            </div>
+            <p className="mt-5 text-xl font-semibold text-[#1f2937] text-center">
+              Elastic User Group New Delhi
+            </p>
+          </a>
         </div>
       </div>
 
