@@ -103,6 +103,13 @@ const speakers = [
     image: "/speakers/hrittik-roy.jpg",
   },
   {
+    name: "Kundeshwar Pundalik",
+    designation: "Technical Lead",
+    company: "BharatGen",
+    talkTitle: "Engineering BharatGen: Sovereign Data and Indigenous LLM Development",
+    image: "/speakers/kundeshwar-pundalik.webp",
+  },
+  {
     name: "Manjula Rathnayaka",
     designation: "Director of Engineering",
     company: "WSO2",
