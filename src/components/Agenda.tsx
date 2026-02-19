@@ -203,24 +203,8 @@ const tracks = [
         title: "Women Gathering – Community Meetup",
         speaker: "Saloni Narang - Co-Founder, Kubesimplify ",
       },
-      {
-        time: "15:30 – 15:45",
-        title: "Sponsor and Speakers Lounge",
-        speaker: "—",
-      },
 
       { time: "15:45 – 16:15", title: "Tea Break", speaker: "" },
-
-      {
-        time: "16:15 – 17:15",
-        title: "Sponsors and Speakers Lounge",
-        speaker: "—",
-      },
-      {
-        time: "17:30 – 18:30",
-        title: "Solutions Showcase & Networking Hour",
-        speaker: "—",
-      },
     ],
   },
 ];
@@ -368,6 +352,11 @@ export default function Agenda() {
             <span className="text-white font-extrabold">Tea Breaks</span>,{" "}
             <span className="text-white font-extrabold">Lunch Break</span> &{" "}
             <span className="text-white font-extrabold">Networking Hour (17:30 – 18:30)</span>
+          </p>
+        </div>
+        <div className="mt-10 bg-gradient-to-r from-[#ea580c] via-[#f97316] to-[#ea580c] rounded-2xl p-6 text-center shadow-2xl border-2 border-white/30">
+          <p className="text-[#fef3e2] font-bold text-lg md:text-xl drop-shadow-lg">
+            <span className="font-bold text-white">Galaxy</span> is the Speakers’ Lounge
           </p>
         </div>
       </div>
