@@ -80,8 +80,10 @@ const tracks = [
       { time: "16:15 – 16:45", title: "Running Multiple Isolated AI Workloads on AMD MI300X GPUs", speaker: "Mirdul Sarup - Manager, Developer Relations, Vultr" },
       {
         time: "16:45 – 17:15",
-        title: "KServe & KAgent: Simplifying AI Model Deployment at Scale",
-        speaker: "Rishi Mondal & Naman Jain",
+        title:
+          "KMCP and the Future of Agent-Native Kubernetes: Control Planes ",
+        speaker:
+          " Aman Mundra -  Founder and CEO, Welzin & Saurabhi - Data Engineer, American Express",
       },
 
       {
@@ -151,10 +153,8 @@ const tracks = [
       },
       {
         time: "15:15 – 15:45",
-        title:
-          "KMCP and the Future of Agent-Native Kubernetes: Control Planes ",
-        speaker:
-          " Aman Mundra -  Founder and CEO, Welzin & Saurabhi - Data Engineer, American Express",
+        title: "KServe & KAgent: Simplifying AI Model Deployment at Scale",
+        speaker: "Rishi Mondal & Naman Jain",
       },
 
       { time: "15:45 – 16:15", title: "Tea Break", speaker: "" },
