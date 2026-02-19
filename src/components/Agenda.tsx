@@ -171,6 +171,12 @@ const tracks = [
         speaker: "Akshay Kumar -  Open Source Evangelist, Obmondo",
       },
       {
+        time: "17:00 – 17:15",
+        title:
+          "Engineering BharatGen: Sovereign Data and Indigenous LLM Development",
+        speaker: "Kundeshwar Pundalik",
+      },
+      {
         time: "17:30 – 18:30",
         title: "Solutions Showcase & Networking Hour",
         speaker: "—",
