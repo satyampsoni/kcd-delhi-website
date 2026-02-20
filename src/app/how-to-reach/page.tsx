@@ -152,57 +152,29 @@ export default function HowToReach() {
             </div>
           </div>
 
-          {/* Auto Section */}
-          <div className="bg-white/30 backdrop-blur-md border border-white/40 rounded-3xl overflow-hidden shadow-xl">
-            <div className="bg-[#0F516B]/90 p-5">
-              <div className="flex items-center gap-3">
-                <span className="text-2xl">🛺</span>
-                <h3 className="text-xl font-bold text-white">Via Auto</h3>
-              </div>
-            </div>
-            <div className="p-6 space-y-4">
-              <div className="bg-white/50 rounded-xl p-3">
-                <p className="text-xs text-gray-500 mb-1">Tell the driver:</p>
-                <p className="font-semibold text-gray-900">
-                  &quot;Holiday Inn, Aerocity, near Airport Terminal 3&quot;
-                </p>
-              </div>
-              <ul className="space-y-2 text-sm">
-                <li className="flex items-start gap-2">
-                  <span className="text-[#0F516B]">✓</span>
-                  <span className="text-gray-600">Enter from Aerocity main gate</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#0F516B]">✓</span>
-                  <span className="text-gray-600">Drop at main hotel entrance</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Airport Section */}
-          <div className="bg-white/30 backdrop-blur-md border border-white/40 rounded-3xl overflow-hidden shadow-xl">
+          {/* Airport Section - Full Width */}
+          <div className="bg-white/30 backdrop-blur-md border border-white/40 rounded-3xl overflow-hidden shadow-xl md:col-span-2">
             <div className="bg-[#0F516B]/90 p-5">
               <div className="flex items-center gap-3">
                 <Plane className="w-6 h-6 text-white" />
                 <h3 className="text-xl font-bold text-white">✈️ From Airport</h3>
               </div>
             </div>
-            <div className="p-6 space-y-4">
-              <p className="text-gray-600 text-sm">From Terminal 3:</p>
-              <div className="space-y-3">
-                <div className="bg-white/50 rounded-xl p-3 flex items-center gap-3">
-                  <Train className="w-5 h-5 text-[#0F516B]" />
+            <div className="p-6">
+              <p className="text-gray-600 text-sm mb-4">From Terminal 3:</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="bg-white/50 rounded-xl p-4 flex items-center gap-3">
+                  <Train className="w-6 h-6 text-[#0F516B]" />
                   <div>
-                    <span className="font-semibold text-gray-900 text-sm">Airport Metro</span>
-                    <p className="text-gray-600 text-xs">Get down at Delhi Aerocity</p>
+                    <span className="font-semibold text-gray-900">Airport Metro</span>
+                    <p className="text-gray-600 text-sm">Get down at Delhi Aerocity station, then 350m walk to hotel</p>
                   </div>
                 </div>
-                <div className="bg-white/50 rounded-xl p-3 flex items-center gap-3">
-                  <Car className="w-5 h-5 text-[#0F516B]" />
+                <div className="bg-white/50 rounded-xl p-4 flex items-center gap-3">
+                  <Car className="w-6 h-6 text-[#0F516B]" />
                   <div>
-                    <span className="font-semibold text-gray-900 text-sm">Cab/Auto</span>
-                    <p className="text-gray-600 text-xs">Direct to Holiday Inn Aerocity</p>
+                    <span className="font-semibold text-gray-900">Cab (Ola/Uber)</span>
+                    <p className="text-gray-600 text-sm">Direct to Holiday Inn Aerocity (~5-10 mins)</p>
                   </div>
                 </div>
               </div>
@@ -223,6 +195,7 @@ export default function HowToReach() {
               "Look for signage: Holiday Inn – IHG Group",
               "Google Maps works accurately inside Aerocity",
               "Approach Aerocity helpdesk if needed",
+              "Autos are generally not permitted in Aerocity area",
             ].map((note, index) => (
               <div key={index} className="flex items-start gap-2 bg-white/40 rounded-xl p-3">
                 <span className="text-[#0F516B] font-bold">•</span>
