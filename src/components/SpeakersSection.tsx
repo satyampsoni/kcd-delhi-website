@@ -58,6 +58,13 @@ const speakers = [
     talkTitle: "GitOps at Scale using FluxCD",
     image: "/speakers/aditya-joshi.jpg",
   },
+   {
+    name: "Aditya Krishnakumar",
+    designation: "Senior Site Reliability Engineer",
+    company: "SentinelOne",
+    talkTitle: "Surviving Zero-Trust-Reliability with Observability and eBPF",
+    image: "/speakers/adityakrishan.png",
+  },
   {
     name: "Aditya Soni",
     designation: "SRE",
@@ -251,13 +258,7 @@ const speakers = [
     talkTitle: "KMCP and the Future of Agent-Native Kubernetes",
     image: "/speakers/saurabhi.JPG",
   },
-  {
-    name: "Yash Verma",
-    designation: "Community Advocate",
-    company: "OpenTelemetry",
-    talkTitle: "Surviving Zero-Trust-Reliability with Observability and eBPF",
-    image: "/speakers/yash-verma.jpg",
-  },
+ 
 ];
 
 export default function SpeakersSection() {

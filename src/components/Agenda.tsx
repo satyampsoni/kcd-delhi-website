@@ -61,7 +61,7 @@ const tracks = [
       {
         time: "14:15 – 14:45",
         title: "Surviving Zero-Trust-Reliability with Observability and eBPF",
-        speaker: "Yash Verma - Community Advocate, OpenTelemetry",
+        speaker: "Aditya Krishnakumar - Senior Site Reliability Engineer, SentinelOne",
       },
       { time: "14:45 – 15:15", title: "Building Elastic Cloud Serverless on K8s: Lessons from Operating at Scale", speaker: "Someshwaran M - Developer Advocate, Elastic" },
       {
