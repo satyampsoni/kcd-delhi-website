@@ -2,7 +2,15 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { MapPin, Train, Car, Navigation, Plane, AlertCircle, ArrowLeft } from "lucide-react";
+import {
+  MapPin,
+  Train,
+  Car,
+  Navigation,
+  Plane,
+  AlertCircle,
+  ArrowLeft,
+} from "lucide-react";
 
 export default function HowToReach() {
   return (
@@ -34,8 +42,8 @@ export default function HowToReach() {
             How to Reach
           </h1>
           <p className="text-xl text-gray-700 max-w-2xl">
-            Hotel Holiday Inn Aerocity is located inside the Aerocity Hospitality District, 
-            near Indira Gandhi International Airport (T3).
+            Hotel Holiday Inn Aerocity is located inside the Aerocity
+            Hospitality District, near Indira Gandhi International Airport (T3).
           </p>
         </div>
       </div>
@@ -58,7 +66,11 @@ export default function HowToReach() {
                 Aerocity Hospitality District, New Delhi - 110037
               </p>
               <p className="text-gray-500 text-sm mt-1">
-                Nearest Metro: <span className="font-semibold text-[#0F516B]">Delhi Aerocity</span> (Airport Express Line)
+                Nearest Metro:{" "}
+                <span className="font-semibold text-[#0F516B]">
+                  Delhi Aerocity
+                </span>{" "}
+                (Airport Express Line)
               </p>
             </div>
             <a
@@ -76,46 +88,93 @@ export default function HowToReach() {
         {/* Transport Options Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
           {/* Metro Section */}
+          {/* Metro Section */}
           <div className="bg-white/30 backdrop-blur-md border border-white/40 rounded-3xl overflow-hidden shadow-xl">
             <div className="bg-[#0F516B]/90 p-5">
               <div className="flex items-center gap-3">
                 <Train className="w-6 h-6 text-white" />
-                <h3 className="text-xl font-bold text-white">🚇 Via Metro</h3>
+                <h3 className="text-xl font-bold text-white">
+                  🚇 Via Metro (Airport Express Line)
+                </h3>
               </div>
             </div>
-            <div className="p-6 space-y-4">
-              <div className="flex gap-3">
-                <div className="flex-shrink-0 w-7 h-7 bg-[#0F516B] text-white rounded-full flex items-center justify-center font-bold text-xs">
-                  1
+
+            <div className="p-6 space-y-6">
+              <div className="bg-white/50 rounded-xl p-4">
+                <p className="text-sm text-gray-700">
+                  Take the{" "}
+                  <span className="font-semibold text-[#0F516B]">
+                    Airport Express (Orange Line)
+                  </span>
+                  and get down at{" "}
+                  <span className="font-semibold text-[#0F516B]">
+                    Delhi Aerocity
+                  </span>{" "}
+                  station.
+                </p>
+                <p className="text-xs text-gray-600 mt-2">
+                  The hotel is just{" "}
+                  <span className="font-semibold">350m walk</span> from Gate 01.
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                {/* New Delhi */}
+                <div className="flex gap-3">
+                  <div className="flex-shrink-0 w-7 h-7 bg-[#0F516B] text-white rounded-full flex items-center justify-center font-bold text-xs">
+                    1
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 text-sm">
+                      From New Delhi Metro Station (Railway Station)
+                    </h4>
+                    <p className="text-gray-600 text-xs mt-0.5">
+                      Board the Airport Express towards Dwarka Sector 21. Get
+                      down at Delhi Aerocity.
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 text-sm">Reach New Delhi Metro Station</h4>
-                  <p className="text-gray-600 text-xs mt-0.5">
-                    Interchange to Orange line (Airport Express). Follow signage.
-                  </p>
+
+                {/* Dhaula Kuan */}
+                <div className="flex gap-3">
+                  <div className="flex-shrink-0 w-7 h-7 bg-[#0F516B] text-white rounded-full flex items-center justify-center font-bold text-xs">
+                    2
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 text-sm">
+                      From Dhaula Kuan
+                    </h4>
+                    <p className="text-gray-600 text-xs mt-0.5">
+                      Board the Airport Express towards Dwarka Sector 21 and get
+                      down at Delhi Aerocity.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Dwarka Sector 21 */}
+                <div className="flex gap-3">
+                  <div className="flex-shrink-0 w-7 h-7 bg-[#0F516B] text-white rounded-full flex items-center justify-center font-bold text-xs">
+                    3
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 text-sm">
+                      From Dwarka Sector 21
+                    </h4>
+                    <p className="text-gray-600 text-xs mt-0.5">
+                      Board the Airport Express towards New Delhi and get down
+                      at Delhi Aerocity.
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="flex gap-3">
-                <div className="flex-shrink-0 w-7 h-7 bg-[#0F516B] text-white rounded-full flex items-center justify-center font-bold text-xs">
-                  2
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 text-sm">Board Train Towards Airport</h4>
-                  <p className="text-gray-600 text-xs mt-0.5">
-                    Take train to Dwarka Sector 21. Get down at <span className="font-semibold text-[#0F516B]">Delhi Aerocity</span>.
-                  </p>
-                </div>
-              </div>
-              <div className="flex gap-3">
-                <div className="flex-shrink-0 w-7 h-7 bg-[#0F516B] text-white rounded-full flex items-center justify-center font-bold text-xs">
-                  3
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 text-sm">Walk to Hotel</h4>
-                  <p className="text-gray-600 text-xs mt-0.5">
-                    Exit from <span className="font-semibold">Gate 01</span>. Just <span className="font-semibold text-[#0F516B]">350m</span> walk.
-                  </p>
-                </div>
+
+              <div className="bg-[#0F516B]/10 rounded-xl p-3">
+                <p className="text-xs text-gray-700">
+                  📌 You do <span className="font-semibold">not</span> need to
+                  go to New Delhi Railway Station specifically. Board the
+                  Airport Express from whichever of these stations is closest to
+                  you.
+                </p>
               </div>
             </div>
           </div>
@@ -138,15 +197,21 @@ export default function HowToReach() {
               <ul className="space-y-2 text-sm">
                 <li className="flex items-start gap-2">
                   <span className="text-[#0F516B]">✓</span>
-                  <span className="text-gray-600">Set drop location as Hotel Entrance</span>
+                  <span className="text-gray-600">
+                    Set drop location as Hotel Entrance
+                  </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#0F516B]">✓</span>
-                  <span className="text-gray-600">Hotel is inside Aerocity near IGI T3</span>
+                  <span className="text-gray-600">
+                    Hotel is inside Aerocity near IGI T3
+                  </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#0F516B]">✓</span>
-                  <span className="text-gray-600">Keep ID ready for security check</span>
+                  <span className="text-gray-600">
+                    Keep ID ready for security check
+                  </span>
                 </li>
               </ul>
             </div>
@@ -157,7 +222,9 @@ export default function HowToReach() {
             <div className="bg-[#0F516B]/90 p-5">
               <div className="flex items-center gap-3">
                 <Plane className="w-6 h-6 text-white" />
-                <h3 className="text-xl font-bold text-white">✈️ From Airport</h3>
+                <h3 className="text-xl font-bold text-white">
+                  ✈️ From Airport
+                </h3>
               </div>
             </div>
             <div className="p-6">
@@ -166,15 +233,24 @@ export default function HowToReach() {
                 <div className="bg-white/50 rounded-xl p-4 flex items-center gap-3">
                   <Train className="w-6 h-6 text-[#0F516B]" />
                   <div>
-                    <span className="font-semibold text-gray-900">Airport Metro</span>
-                    <p className="text-gray-600 text-sm">Get down at Delhi Aerocity station, then 350m walk to hotel</p>
+                    <span className="font-semibold text-gray-900">
+                      Airport Metro
+                    </span>
+                    <p className="text-gray-600 text-sm">
+                      Get down at Delhi Aerocity station, then 350m walk to
+                      hotel
+                    </p>
                   </div>
                 </div>
                 <div className="bg-white/50 rounded-xl p-4 flex items-center gap-3">
                   <Car className="w-6 h-6 text-[#0F516B]" />
                   <div>
-                    <span className="font-semibold text-gray-900">Cab (Ola/Uber)</span>
-                    <p className="text-gray-600 text-sm">Direct to Holiday Inn Aerocity (~5-10 mins)</p>
+                    <span className="font-semibold text-gray-900">
+                      Cab (Ola/Uber)
+                    </span>
+                    <p className="text-gray-600 text-sm">
+                      Direct to Holiday Inn Aerocity (~5-10 mins)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -186,7 +262,9 @@ export default function HowToReach() {
         <div className="bg-white/30 backdrop-blur-md border border-white/40 rounded-3xl p-6 md:p-8 shadow-xl mb-10">
           <div className="flex items-center gap-3 mb-5">
             <AlertCircle className="w-6 h-6 text-[#0F516B]" />
-            <h3 className="text-xl font-bold text-gray-900">📌 Important Notes</h3>
+            <h3 className="text-xl font-bold text-gray-900">
+              📌 Important Notes
+            </h3>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {[
@@ -197,7 +275,10 @@ export default function HowToReach() {
               "Approach Aerocity helpdesk if needed",
               "Autos are generally not permitted in Aerocity area",
             ].map((note, index) => (
-              <div key={index} className="flex items-start gap-2 bg-white/40 rounded-xl p-3">
+              <div
+                key={index}
+                className="flex items-start gap-2 bg-white/40 rounded-xl p-3"
+              >
                 <span className="text-[#0F516B] font-bold">•</span>
                 <span className="text-gray-700 text-sm">{note}</span>
               </div>
@@ -207,7 +288,9 @@ export default function HowToReach() {
 
         {/* Map Link Card */}
         <div className="bg-white/30 backdrop-blur-md border border-white/40 rounded-3xl p-6 shadow-xl mb-10 text-center">
-          <h3 className="text-xl font-bold text-gray-900 mb-4">📍 Get Directions</h3>
+          <h3 className="text-xl font-bold text-gray-900 mb-4">
+            📍 Get Directions
+          </h3>
           <a
             href="https://maps.app.goo.gl/A89YMpjsK3h69xgV9"
             target="_blank"
@@ -233,4 +316,3 @@ export default function HowToReach() {
     </main>
   );
 }
-
