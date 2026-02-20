@@ -168,7 +168,7 @@ const tracks = [
       {
         time: "16:45 – 17:00",
         title: "AI-Assisted Kubernetes Policy Management with Kyverno",
-        speaker: "Akshay Kumar -  Open Source Evangelist, Obmondo",
+        speaker: "Akshay Kumar & Onkar Shelke",
       },
       {
         time: "17:00 – 17:15",
