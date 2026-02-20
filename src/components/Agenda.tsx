@@ -83,7 +83,7 @@ const tracks = [
         title:
           "KMCP and the Future of Agent-Native Kubernetes: Control Planes ",
         speaker:
-          " Aman Mundra -  Founder and CEO, Welzin & Saurabhi - Data Engineer, American Express",
+          " Aman Mundra -  Founder and CEO, Welzin & Surabhi - Data Engineer, American Express",
       },
 
       {
