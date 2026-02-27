@@ -9,6 +9,7 @@ import Sponsors from "@/components/Sponsors";
 import Footer from "@/components/Footer";
 // import NotificationBanner from "@/components/notificationBanner";
 import SpeakersSection from "@/components/SpeakersSection";
+import Highlights from "@/components/Highlights";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <Venue />
       <Team />
       <Sponsors />
+      <Highlights />
       <Footer />
     </main>
   );

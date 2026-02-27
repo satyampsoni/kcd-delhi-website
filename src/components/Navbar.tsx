@@ -7,12 +7,13 @@ import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { name: "About", href: "#about" },
-  { name: "Event Timeline", href: "#timeline" },
+  { name: "Timeline", href: "#timeline" },
   { name: "Agenda", href: "#agenda" },
   { name: "Speakers", href: "#speakers" },
   { name: "Venue", href: "#venue" },
   { name: "Team", href: "#team" },
   { name: "Sponsors", href: "#sponsors" },
+  { name: "Highlights", href: "#highlights" },
 ];
 
 export default function Navbar() {
